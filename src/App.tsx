@@ -1,16 +1,20 @@
+import { Header } from "./components/layout/Header";
+import { Footer } from "./components/layout/Footer";
+import { HeroSection } from "./components/hero/HeroSection";
+import { ProductGrid } from "./components/product/ProductGrid";
+import { products } from "./data/products";
+
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <header className="bg-green-700 text-white py-4">
-        <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-2xl font-bold">米販売サイト</h1>
-        </div>
-      </header>
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        <p className="text-gray-600">準備中...</p>
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      <Header />
+      <main className="flex-1">
+        <HeroSection />
+        <ProductGrid products={products} />
       </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
