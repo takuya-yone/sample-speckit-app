@@ -4,6 +4,7 @@ import { Footer } from "./components/layout/Footer";
 import { HeroSection } from "./components/hero/HeroSection";
 import { ProductGrid } from "./components/product/ProductGrid";
 import { CartDrawer } from "./components/cart/CartDrawer";
+import { Toaster } from "./components/ui/sonner";
 import { products } from "./data/products";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
       />
+      <Toaster position="top-right" visibleToasts={3} duration={5000} />
     </div>
   );
 }

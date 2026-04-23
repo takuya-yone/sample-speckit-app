@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "sonner";
 import type { Product } from "../../types/product";
 import { useCartStore } from "../../stores/useCartStore";
 import placeholderImage from "../../assets/rice-placeholder.svg";
@@ -42,7 +43,12 @@ export function ProductCard({ product }: ProductCardProps) {
         </p>
         <button
           type="button"
-          onClick={() => addItem(product.id)}
+          onClick={() => {
+            addItem(product.id);
+            toast("カートに追加", {
+              description: `${product.name}をカートに追加しました`,
+            });
+          }}
           className="mt-3 w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors hover:bg-green-800"
         >
           カートに追加
