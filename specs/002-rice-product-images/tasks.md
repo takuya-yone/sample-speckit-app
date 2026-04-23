@@ -17,8 +17,8 @@
 
 **Purpose**: Create image directory and prepare tooling
 
-- [ ] T001 Create public/images/ directory for product images
-- [ ] T002 Install sharp as dev dependency for image conversion with npm install -D sharp
+- [x] T001 Create public/images/ directory for product images
+- [x] T002 Install sharp as dev dependency for image conversion with npm install -D sharp
 
 **Checkpoint**: Directory and tooling ready for image generation
 
@@ -32,13 +32,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T003 [P] [US1] Generate and save コシヒカリ image (rice bowl with mountain backdrop, warm golden light) to public/images/koshihikari.webp
-- [ ] T004 [P] [US1] Generate and save あきたこまち image (rice in ceramic bowl, autumn leaves, cool tones) to public/images/akitakomachi.webp
-- [ ] T005 [P] [US1] Generate and save ひとめぼれ image (steaming rice bowl, green bamboo background) to public/images/hitomebore.webp
-- [ ] T006 [P] [US1] Generate and save ササニシキ image (sushi rice in lacquer box, minimalist Japanese style) to public/images/sasanishiki.webp
-- [ ] T007 [P] [US1] Generate and save つや姫 image (glossy rice grains close-up, cherry blossom accent) to public/images/tsuyahime.webp
-- [ ] T008 [P] [US1] Generate and save ゆめぴりか image (rice in stoneware bowl, snowy landscape background) to public/images/yumepirika.webp
-- [ ] T009 [US1] Verify all 6 images exist in public/images/ and display correctly in the browser
+- [x] T003 [P] [US1] Generate and save コシヒカリ image (rice bowl with mountain backdrop, warm golden light) to public/images/koshihikari.webp
+- [x] T004 [P] [US1] Generate and save あきたこまち image (rice in ceramic bowl, autumn leaves, cool tones) to public/images/akitakomachi.webp
+- [x] T005 [P] [US1] Generate and save ひとめぼれ image (steaming rice bowl, green bamboo background) to public/images/hitomebore.webp
+- [x] T006 [P] [US1] Generate and save ササニシキ image (sushi rice in lacquer box, minimalist Japanese style) to public/images/sasanishiki.webp
+- [x] T007 [P] [US1] Generate and save つや姫 image (glossy rice grains close-up, cherry blossom accent) to public/images/tsuyahime.webp
+- [x] T008 [P] [US1] Generate and save ゆめぴりか image (rice in stoneware bowl, snowy landscape background) to public/images/yumepirika.webp
+- [x] T009 [US1] Verify all 6 images exist in public/images/ and display correctly in the browser
 
 **Checkpoint**: All 6 product images display on the top page — no placeholders remaining
 
@@ -52,9 +52,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T010 [US2] Verify all images are WebP format and under 200KB each, re-optimize with sharp if any exceed the limit
-- [ ] T011 [US2] Verify all images have consistent 4:3 aspect ratio (800x600px target) and resize if needed
-- [ ] T012 [US2] Verify page load time remains under 3s with images loaded
+- [x] T010 [US2] Verify all images are WebP format and under 200KB each, re-optimize with sharp if any exceed the limit
+- [x] T011 [US2] Verify all images have consistent 4:3 aspect ratio (800x600px target) and resize if needed
+- [x] T012 [US2] Verify page load time remains under 3s with images loaded
 
 **Checkpoint**: All images optimized, under 200KB, consistent aspect ratio, page performance maintained
 
@@ -64,8 +64,8 @@
 
 **Purpose**: Final validation and build verification
 
-- [ ] T013 Verify image error fallback still works by temporarily renaming an image file and checking placeholder appears
-- [ ] T014 Run production build and verify images load correctly with npm run build && npm run preview
+- [x] T013 Verify image error fallback still works by temporarily renaming an image file and checking placeholder appears
+- [x] T014 Run production build and verify images load correctly with npm run build && npm run preview
 
 ---
 
