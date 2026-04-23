@@ -17,8 +17,8 @@
 
 **Purpose**: Remove npm artifacts to prepare for pnpm migration
 
-- [ ] T001 Delete package-lock.json from repository root
-- [ ] T002 Delete node_modules/ directory from repository root
+- [x] T001 Delete package-lock.json from repository root
+- [x] T002 Delete node_modules/ directory from repository root
 
 ---
 
@@ -30,11 +30,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T003 [US1] Add `packageManager` field (pnpm 10.x) to package.json
-- [ ] T004 [US1] Add `preinstall` script with `only-allow pnpm` guard to package.json
-- [ ] T005 [US1] Run `pnpm install` to generate pnpm-lock.yaml and recreate node_modules/
-- [ ] T006 [US1] Verify `pnpm-lock.yaml` exists and `package-lock.json` does not exist
-- [ ] T007 [US1] Run `pnpm build` and verify it completes with zero errors
+- [x] T003 [US1] Add `packageManager` field (pnpm 10.x) to package.json
+- [x] T004 [US1] Add `preinstall` script with `only-allow pnpm` guard to package.json
+- [x] T005 [US1] Run `pnpm install` to generate pnpm-lock.yaml and recreate node_modules/
+- [x] T006 [US1] Verify `pnpm-lock.yaml` exists and `package-lock.json` does not exist
+- [x] T007 [US1] Run `pnpm build` and verify it completes with zero errors
 
 **Checkpoint**: pnpm is the active package manager, all dependencies installed, build succeeds
 
@@ -48,9 +48,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T008 [US2] Run `pnpm dev` and verify dev server starts on http://localhost:5173
-- [ ] T009 [US2] Verify npm install guard — run `npm install` and confirm it fails with a guard message
-- [ ] T010 [US2] Run quickstart.md validation steps to confirm full migration
+- [x] T008 [US2] Run `pnpm dev` and verify dev server starts on http://localhost:5173
+- [x] T009 [US2] Verify npm install guard — run `npm install` and confirm it fails with a guard message
+- [x] T010 [US2] Run quickstart.md validation steps to confirm full migration
 
 **Checkpoint**: All existing features work, npm guard active, migration fully verified
 
@@ -60,7 +60,7 @@
 
 **Purpose**: Final cleanup
 
-- [ ] T011 Verify .gitignore includes pnpm-lock.yaml is NOT ignored (should be committed)
+- [x] T011 Verify .gitignore includes pnpm-lock.yaml is NOT ignored (should be committed)
 
 ---
 
