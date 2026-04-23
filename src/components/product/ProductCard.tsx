@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Product } from "../../types/product";
+import { useCartStore } from "../../stores/useCartStore";
 import placeholderImage from "../../assets/rice-placeholder.svg";
 
 interface ProductCardProps {
@@ -8,6 +9,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const [imgSrc, setImgSrc] = useState(product.imageUrl);
+  const addItem = useCartStore((state) => state.addItem);
 
   const handleImageError = () => {
     setImgSrc(placeholderImage);
@@ -38,6 +40,13 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className="text-sm text-gray-600 mt-2 line-clamp-2">
           {product.description}
         </p>
+        <button
+          type="button"
+          onClick={() => addItem(product.id)}
+          className="mt-3 w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors hover:bg-green-800"
+        >
+          カートに追加
+        </button>
       </div>
     </article>
   );

@@ -17,7 +17,7 @@
 
 **Purpose**: Add zustand to the project
 
-- [ ] T001 Install zustand as a dependency via `pnpm add zustand`
+- [x] T001 Install zustand as a dependency via `pnpm add zustand`
 
 ---
 
@@ -27,8 +27,8 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T002 Create CartItem type definition in src/types/cart.ts
-- [ ] T003 Create zustand cart store with persist middleware in src/stores/useCartStore.ts — include actions: addItem, removeItem, updateQuantity, clearCart, and derived selectors: totalItems, totalPrice. Include max quantity (99) enforcement. Wire persist middleware with localStorage key `cart-storage`.
+- [x] T002 Create CartItem type definition in src/types/cart.ts
+- [x] T003 Create zustand cart store with persist middleware in src/stores/useCartStore.ts — include actions: addItem, removeItem, updateQuantity, clearCart, and derived selectors: totalItems, totalPrice. Include max quantity (99) enforcement. Wire persist middleware with localStorage key `cart-storage`.
 
 **Checkpoint**: Store is ready — all user stories can now proceed
 
@@ -42,10 +42,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T004 [P] [US1] Create CartIcon component with badge in src/components/cart/CartIcon.tsx — display cart icon with total item count badge from useCartStore. Hide badge when cart is empty. Add aria-label for accessibility.
-- [ ] T005 [P] [US1] Add "カートに追加" button to ProductCard in src/components/product/ProductCard.tsx — call useCartStore.addItem(product.id) on click. Style with TailwindCSS green button consistent with app theme.
-- [ ] T006 [US1] Integrate CartIcon into Header in src/components/layout/Header.tsx — add CartIcon next to site name, aligned to the right side of the nav bar.
-- [ ] T007 [US1] Verify US1: run `pnpm build` and manually test add-to-cart flow in browser
+- [x] T004 [P] [US1] Create CartIcon component with badge in src/components/cart/CartIcon.tsx — display cart icon with total item count badge from useCartStore. Hide badge when cart is empty. Add aria-label for accessibility.
+- [x] T005 [P] [US1] Add "カートに追加" button to ProductCard in src/components/product/ProductCard.tsx — call useCartStore.addItem(product.id) on click. Style with TailwindCSS green button consistent with app theme.
+- [x] T006 [US1] Integrate CartIcon into Header in src/components/layout/Header.tsx — add CartIcon next to site name, aligned to the right side of the nav bar.
+- [x] T007 [US1] Verify US1: run `pnpm build` and manually test add-to-cart flow in browser
 
 **Checkpoint**: Products can be added to cart, badge shows count in header
 
@@ -59,11 +59,11 @@
 
 ### Implementation for User Story 2
 
-- [ ] T008 [P] [US2] Create CartItem component in src/components/cart/CartItem.tsx — display product name, image, unit price, quantity with +/- buttons, subtotal, and delete button. Use useCartStore actions for quantity changes and removal. Format prices with Intl.NumberFormat("ja-JP").
-- [ ] T009 [US2] Create CartDrawer component in src/components/cart/CartDrawer.tsx — slide-out panel from right side. Show list of CartItem components, total price at bottom, empty state message ("カートは空です") with link to products section. Include close button and overlay backdrop. Accessible with proper aria attributes and focus trap.
-- [ ] T010 [US2] Add cart open/close state to CartIcon click handler in src/components/cart/CartIcon.tsx — clicking CartIcon toggles the CartDrawer open state
-- [ ] T011 [US2] Integrate CartDrawer into App in src/App.tsx — render CartDrawer component, pass open/close state management
-- [ ] T012 [US2] Verify US2: run `pnpm build` and manually test cart drawer, quantity changes, item removal, empty state in browser
+- [x] T008 [P] [US2] Create CartItem component in src/components/cart/CartItem.tsx — display product name, image, unit price, quantity with +/- buttons, subtotal, and delete button. Use useCartStore actions for quantity changes and removal. Format prices with Intl.NumberFormat("ja-JP").
+- [x] T009 [US2] Create CartDrawer component in src/components/cart/CartDrawer.tsx — slide-out panel from right side. Show list of CartItem components, total price at bottom, empty state message ("カートは空です") with link to products section. Include close button and overlay backdrop. Accessible with proper aria attributes and focus trap.
+- [x] T010 [US2] Add cart open/close state to CartIcon click handler in src/components/cart/CartIcon.tsx — clicking CartIcon toggles the CartDrawer open state
+- [x] T011 [US2] Integrate CartDrawer into App in src/App.tsx — render CartDrawer component, pass open/close state management
+- [x] T012 [US2] Verify US2: run `pnpm build` and manually test cart drawer, quantity changes, item removal, empty state in browser
 
 **Checkpoint**: Full cart management UI working — view, edit quantities, remove items, see totals
 
@@ -77,8 +77,8 @@
 
 ### Implementation for User Story 3
 
-- [ ] T013 [US3] Verify persistence: add items to cart, reload page, confirm cart state is restored from localStorage. This should already work via zustand persist middleware configured in T003 — verify and fix if needed.
-- [ ] T014 [US3] Verify US3: close and reopen browser tab, confirm cart contents persist across sessions
+- [x] T013 [US3] Verify persistence: add items to cart, reload page, confirm cart state is restored from localStorage. This should already work via zustand persist middleware configured in T003 — verify and fix if needed.
+- [x] T014 [US3] Verify US3: close and reopen browser tab, confirm cart contents persist across sessions
 
 **Checkpoint**: Cart persists across reloads and browser sessions
 
@@ -88,10 +88,10 @@
 
 **Purpose**: Final validation and edge case verification
 
-- [ ] T015 Verify max quantity enforcement: add 99 of one product, attempt to add more, confirm quantity stays at 99
-- [ ] T016 Verify responsive design: test cart drawer on mobile viewport (375px), tablet (768px), and desktop (1280px)
-- [ ] T017 Run `pnpm build` — confirm zero errors in final production build
-- [ ] T018 Run quickstart.md full validation checklist
+- [x] T015 Verify max quantity enforcement: add 99 of one product, attempt to add more, confirm quantity stays at 99
+- [x] T016 Verify responsive design: test cart drawer on mobile viewport (375px), tablet (768px), and desktop (1280px)
+- [x] T017 Run `pnpm build` — confirm zero errors in final production build
+- [x] T018 Run quickstart.md full validation checklist
 
 ---
 
