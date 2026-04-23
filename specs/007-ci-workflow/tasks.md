@@ -19,7 +19,7 @@
 
 **Purpose**: GitHub Actionsワークフローディレクトリの作成
 
-- [ ] T001 Create .github/workflows/ directory structure at repository root
+- [x] T001 Create .github/workflows/ directory structure at repository root
 
 **Checkpoint**: `.github/workflows/` ディレクトリが存在する
 
@@ -31,9 +31,9 @@
 
 **⚠️ CRITICAL**: ワークフローで実行するコマンドがローカルで成功することを確認してからワークフロー作成へ進む
 
-- [ ] T002 Verify `pnpm tsc -b` completes successfully in local environment
-- [ ] T003 [P] Verify `pnpm lint` completes successfully in local environment
-- [ ] T004 [P] Verify `pnpm vite build` completes successfully in local environment
+- [x] T002 Verify `pnpm tsc -b` completes successfully in local environment
+- [x] T003 [P] Verify `pnpm lint` completes successfully in local environment
+- [x] T004 [P] Verify `pnpm vite build` completes successfully in local environment
 
 **Checkpoint**: 型チェック・リンティング・ビルドの全コマンドがローカルで成功する
 
@@ -47,13 +47,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T005 [US1] Create CI workflow file at .github/workflows/ci.yml with name `CI`, trigger on `pull_request` targeting main branch, single job `ci` running on `ubuntu-latest`
-- [ ] T006 [US1] Add checkout step using `actions/checkout@v4` in .github/workflows/ci.yml
-- [ ] T007 [US1] Add pnpm setup step using `pnpm/action-setup@v4` in .github/workflows/ci.yml
-- [ ] T008 [US1] Add Node.js setup step using `actions/setup-node@v4` with `node-version: 20` and `cache: 'pnpm'` in .github/workflows/ci.yml
-- [ ] T009 [US1] Add dependency install step `pnpm install --frozen-lockfile` in .github/workflows/ci.yml
-- [ ] T010 [US1] Add type check step `pnpm tsc -b`, lint step `pnpm lint`, and build step `pnpm vite build` in .github/workflows/ci.yml
-- [ ] T011 [US1] Add concurrency group `${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}` with `cancel-in-progress: true` in .github/workflows/ci.yml
+- [x] T005 [US1] Create CI workflow file at .github/workflows/ci.yml with name `CI`, trigger on `pull_request` targeting main branch, single job `ci` running on `ubuntu-latest`
+- [x] T006 [US1] Add checkout step using `actions/checkout@v4` in .github/workflows/ci.yml
+- [x] T007 [US1] Add pnpm setup step using `pnpm/action-setup@v4` in .github/workflows/ci.yml
+- [x] T008 [US1] Add Node.js setup step using `actions/setup-node@v4` with `node-version: 20` and `cache: 'pnpm'` in .github/workflows/ci.yml
+- [x] T009 [US1] Add dependency install step `pnpm install --frozen-lockfile` in .github/workflows/ci.yml
+- [x] T010 [US1] Add type check step `pnpm tsc -b`, lint step `pnpm lint`, and build step `pnpm vite build` in .github/workflows/ci.yml
+- [x] T011 [US1] Add concurrency group `${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}` with `cancel-in-progress: true` in .github/workflows/ci.yml
 
 **Checkpoint**: PRを作成し、GitHub ActionsでCIワークフローが自動起動して成功ステータスが表示される（MVP完了）
 
@@ -67,7 +67,7 @@
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Add `push` trigger for `branches: [main]` to the existing `on` section in .github/workflows/ci.yml
+- [x] T012 [US2] Add `push` trigger for `branches: [main]` to the existing `on` section in .github/workflows/ci.yml
 
 **Checkpoint**: mainブランチへのPush時にCIワークフローが自動実行される
 
@@ -77,8 +77,8 @@
 
 **Purpose**: 最終検証とドキュメント整備
 
-- [ ] T013 Verify workflow YAML syntax is valid by running a YAML linter or checking with `python3 -c "import yaml; yaml.safe_load(open('.github/workflows/ci.yml'))"`
-- [ ] T014 Run quickstart.md validation — follow quickstart.md steps and confirm all instructions are accurate
+- [x] T013 Verify workflow YAML syntax is valid by running a YAML linter or checking with `python3 -c "import yaml; yaml.safe_load(open('.github/workflows/ci.yml'))"`
+- [x] T014 Run quickstart.md validation — follow quickstart.md steps and confirm all instructions are accurate
 
 ---
 
