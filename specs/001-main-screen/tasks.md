@@ -17,9 +17,9 @@
 
 **Purpose**: Project structure and shared type/data foundations
 
-- [ ] T001 Create Product type definition in src/types/product.ts
-- [ ] T002 Create sample product data array in src/data/products.ts
-- [ ] T003 [P] Create placeholder image for product fallback in src/assets/rice-placeholder.svg
+- [x] T001 Create Product type definition in src/types/product.ts
+- [x] T002 Create sample product data array in src/data/products.ts
+- [x] T003 [P] Create placeholder image for product fallback in src/assets/rice-placeholder.svg
 
 **Checkpoint**: Shared types and data ready — component implementation can begin
 
@@ -29,8 +29,8 @@
 
 **Purpose**: Header and Footer layout components that all user stories depend on
 
-- [ ] T004 [P] Create Header component with site name in src/components/layout/Header.tsx
-- [ ] T005 [P] Create Footer component with copyright in src/components/layout/Footer.tsx
+- [x] T004 [P] Create Header component with site name in src/components/layout/Header.tsx
+- [x] T005 [P] Create Footer component with copyright in src/components/layout/Footer.tsx
 
 **Checkpoint**: Layout shell ready — user story implementation can begin
 
@@ -44,11 +44,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Create ProductCard component with image, name, origin, price, description in src/components/product/ProductCard.tsx
-- [ ] T007 [US1] Add image onError fallback to placeholder in src/components/product/ProductCard.tsx
-- [ ] T008 [US1] Create ProductGrid component with responsive grid layout in src/components/product/ProductGrid.tsx
-- [ ] T009 [US1] Add empty state message when no products in src/components/product/ProductGrid.tsx
-- [ ] T010 [US1] Integrate Header, ProductGrid, Footer into App.tsx in src/App.tsx
+- [x] T006 [US1] Create ProductCard component with image, name, origin, price, description in src/components/product/ProductCard.tsx
+- [x] T007 [US1] Add image onError fallback to placeholder in src/components/product/ProductCard.tsx
+- [x] T008 [US1] Create ProductGrid component with responsive grid layout in src/components/product/ProductGrid.tsx
+- [x] T009 [US1] Add empty state message when no products in src/components/product/ProductGrid.tsx
+- [x] T010 [US1] Integrate Header, ProductGrid, Footer into App.tsx in src/App.tsx
 
 **Checkpoint**: Product grid is fully functional and testable — cards display all fields, responsive grid works, empty state handled
 
@@ -62,11 +62,11 @@
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] Create HeroSection component with background image and catch copy in src/components/hero/HeroSection.tsx
-- [ ] T012 [US2] Add CTA button with smooth scroll to product grid in src/components/hero/HeroSection.tsx
-- [ ] T013 [US2] Add anime.js entrance animation (fade-in + slide-up) to hero in src/components/hero/HeroSection.tsx
-- [ ] T014 [US2] Respect prefers-reduced-motion for hero animation in src/components/hero/HeroSection.tsx
-- [ ] T015 [US2] Integrate HeroSection into App.tsx between Header and ProductGrid in src/App.tsx
+- [x] T011 [US2] Create HeroSection component with background image and catch copy in src/components/hero/HeroSection.tsx
+- [x] T012 [US2] Add CTA button with smooth scroll to product grid in src/components/hero/HeroSection.tsx
+- [x] T013 [US2] Add anime.js entrance animation (fade-in + slide-up) to hero in src/components/hero/HeroSection.tsx
+- [x] T014 [US2] Respect prefers-reduced-motion for hero animation in src/components/hero/HeroSection.tsx
+- [x] T015 [US2] Integrate HeroSection into App.tsx between Header and ProductGrid in src/App.tsx
 
 **Checkpoint**: Hero section displays with animation, CTA scrolls to products, animation respects motion preference
 
@@ -80,10 +80,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T016 [US3] Verify and adjust ProductCard responsive styles for mobile in src/components/product/ProductCard.tsx
-- [ ] T017 [US3] Verify ProductGrid columns: 1 col mobile, 2 col tablet, 3 col desktop in src/components/product/ProductGrid.tsx
-- [ ] T018 [US3] Verify and adjust HeroSection responsive layout for mobile in src/components/hero/HeroSection.tsx
-- [ ] T019 [US3] Verify Header and Footer responsive styles in src/components/layout/Header.tsx and src/components/layout/Footer.tsx
+- [x] T016 [US3] Verify and adjust ProductCard responsive styles for mobile in src/components/product/ProductCard.tsx
+- [x] T017 [US3] Verify ProductGrid columns: 1 col mobile, 2 col tablet, 3 col desktop in src/components/product/ProductGrid.tsx
+- [x] T018 [US3] Verify and adjust HeroSection responsive layout for mobile in src/components/hero/HeroSection.tsx
+- [x] T019 [US3] Verify Header and Footer responsive styles in src/components/layout/Header.tsx and src/components/layout/Footer.tsx
 
 **Checkpoint**: All components render correctly at 375px, 768px, and 1280px breakpoints
 
@@ -93,12 +93,12 @@
 
 **Purpose**: Accessibility, performance, and final validation
 
-- [ ] T020 Add semantic HTML elements (nav, main, section, footer) across all components
-- [ ] T021 Add alt text to all images and aria-labels to interactive elements
-- [ ] T022 Add lazy loading attribute to product images in src/components/product/ProductCard.tsx
-- [ ] T023 Verify long product name/description truncation in src/components/product/ProductCard.tsx
-- [ ] T024 Run production build and verify no errors with npm run build
-- [ ] T025 Run quickstart.md verification steps manually
+- [x] T020 Add semantic HTML elements (nav, main, section, footer) across all components
+- [x] T021 Add alt text to all images and aria-labels to interactive elements
+- [x] T022 Add lazy loading attribute to product images in src/components/product/ProductCard.tsx
+- [x] T023 Verify long product name/description truncation in src/components/product/ProductCard.tsx
+- [x] T024 Run production build and verify no errors with npm run build
+- [x] T025 Run quickstart.md verification steps manually
 
 ---
 
