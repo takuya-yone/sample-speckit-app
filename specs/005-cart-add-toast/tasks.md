@@ -17,11 +17,11 @@
 
 **Purpose**: Initialize shadcn/ui and install Sonner toast component
 
-- [ ] T001 Add TypeScript path alias `@/*` → `./src/*` to tsconfig.json and tsconfig.app.json
-- [ ] T002 Add path alias resolution to vite.config.ts for `@` → `src/`
-- [ ] T003 Run `pnpm dlx shadcn@latest init` to initialize shadcn/ui (creates components.json, src/lib/utils.ts, updates CSS variables in src/index.css)
-- [ ] T004 Run `pnpm dlx shadcn@latest add sonner` to add the Sonner toast component to src/components/ui/sonner.tsx
-- [ ] T005 Verify `pnpm build` passes after shadcn/ui setup
+- [x] T001 Add TypeScript path alias `@/*` → `./src/*` to tsconfig.json and tsconfig.app.json
+- [x] T002 Add path alias resolution to vite.config.ts for `@` → `src/`
+- [x] T003 Run `pnpm dlx shadcn@latest init` to initialize shadcn/ui (creates components.json, src/lib/utils.ts, updates CSS variables in src/index.css)
+- [x] T004 Run `pnpm dlx shadcn@latest add sonner` to add the Sonner toast component to src/components/ui/sonner.tsx
+- [x] T005 Verify `pnpm build` passes after shadcn/ui setup
 
 ---
 
@@ -33,9 +33,9 @@
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Add `<Toaster />` component to src/App.tsx — import from src/components/ui/sonner.tsx, configure position="top-right", visibleToasts={3}, duration={5000}
-- [ ] T007 [US1] Add `toast()` call to ProductCard's "カートに追加" handler in src/components/product/ProductCard.tsx — import toast from sonner, call `toast("カートに追加", { description: "[product.name]をカートに追加しました" })` after addItem
-- [ ] T008 [US1] Verify US1: run `pnpm build` and manually test toast display, auto-dismiss, manual close, and stacking in browser
+- [x] T006 [US1] Add `<Toaster />` component to src/App.tsx — import from src/components/ui/sonner.tsx, configure position="top-right", visibleToasts={3}, duration={5000}
+- [x] T007 [US1] Add `toast()` call to ProductCard's "カートに追加" handler in src/components/product/ProductCard.tsx — import toast from sonner, call `toast("カートに追加", { description: "[product.name]をカートに追加しました" })` after addItem
+- [x] T008 [US1] Verify US1: run `pnpm build` and manually test toast display, auto-dismiss, manual close, and stacking in browser
 
 **Checkpoint**: Toast notifications appear on cart add, auto-dismiss, stack correctly
 
@@ -49,9 +49,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T009 [US2] Verify cart badge updates simultaneously with toast display in browser
-- [ ] T010 [US2] Verify cart drawer opens and functions correctly after toast-enabled cart additions
-- [ ] T011 [US2] Verify cart persistence — add items, reload page, confirm cart and toasts do not interfere with localStorage
+- [x] T009 [US2] Verify cart badge updates simultaneously with toast display in browser
+- [x] T010 [US2] Verify cart drawer opens and functions correctly after toast-enabled cart additions
+- [x] T011 [US2] Verify cart persistence — add items, reload page, confirm cart and toasts do not interfere with localStorage
 
 **Checkpoint**: All existing features work alongside toast notifications
 
@@ -61,10 +61,10 @@
 
 **Purpose**: Final validation, responsive check, accessibility
 
-- [ ] T012 Verify toast responsive design: test on mobile (375px), tablet (768px), desktop (1280px)
-- [ ] T013 Verify toast accessibility: confirm aria-live region exists for screen reader announcements
-- [ ] T014 Run `pnpm build` — confirm zero errors in final production build
-- [ ] T015 Run quickstart.md full validation checklist
+- [x] T012 Verify toast responsive design: test on mobile (375px), tablet (768px), desktop (1280px)
+- [x] T013 Verify toast accessibility: confirm aria-live region exists for screen reader announcements
+- [x] T014 Run `pnpm build` — confirm zero errors in final production build
+- [x] T015 Run quickstart.md full validation checklist
 
 ---
 
